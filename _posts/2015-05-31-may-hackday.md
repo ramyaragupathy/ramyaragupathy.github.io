@@ -5,4 +5,4 @@ date: 2015-05-31
 author: ramya
 ---
 
-Here is a link to [my first Indic map](https://github.com/ramyaragupathy/IndicMaps)
+Here is a link to [my first Indic map](ramyaragupathy.github.io/IndicMaps/index.html)
