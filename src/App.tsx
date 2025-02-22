@@ -58,7 +58,7 @@ function App() {
         <div className="bg-gray-800/50 rounded-xl p-8 backdrop-blur-sm">
           <h2 className="text-3xl font-bold text-white mb-4">About Me</h2>
           <p className="text-gray-300">
-          I'm a Product Manager specializing in open-source mapping technologies, currently driving product vision and strategy at Humanitarian OpenStreetMap Team (HOT) and serving as Head of Product & Operations at MapLibre. I lead projects that leverage cutting-edge geospatial tools to empower humanitarian efforts and community-driven mapping. Passionate about creating tech that makes a real-world impact, I thrive at the intersection of technology, community, and storytelling.
+          I'm a consultant software developer & product manager specializing in open-source mapping technologies, currently driving product vision and strategy at Humanitarian OpenStreetMap Team (HOT) and serving as Head of Product & Operations at MapLibre. I lead projects that leverage cutting-edge geospatial tools to empower humanitarian efforts and community-driven mapping. Passionate about creating tech that makes a real-world impact, I thrive at the intersection of technology, community, and storytelling.
           </p>
         </div>
       </div>
