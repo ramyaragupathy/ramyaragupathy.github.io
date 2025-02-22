@@ -1,5 +1,5 @@
 import React from 'react';
-import { Github, Linkedin, Mail, Code, Globe, Folder} from 'lucide-react';
+import { Github, Linkedin, Mail, Code, Globe, Folder, ChevronUp, ChevronDown} from 'lucide-react';
 import ramya from './assets/ramya-circle.jpg';
 import hot from './assets/hotosm.jpg';
 import maplibre from './assets/maplibre.png';
@@ -271,6 +271,24 @@ function App() {
       </form>
     </div>
   </div>
+</div>
+{/* Polished Navigation Arrows */}
+<div className="fixed bottom-6 right-6 flex flex-col gap-3 z-20">
+  <button
+    onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+    className="bg-gray-800/70 hover:bg-blue-500 text-white p-3 rounded-full shadow-lg transition-transform transform hover:scale-110"
+    aria-label="Scroll to top"
+  >
+    <ChevronUp className="w-6 h-6" />
+  </button>
+  
+  <button
+    onClick={() => window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })}
+    className="bg-gray-800/70 hover:bg-blue-500 text-white p-3 rounded-full shadow-lg transition-transform transform hover:scale-110"
+    aria-label="Scroll to bottom"
+  >
+    <ChevronDown className="w-6 h-6" />
+  </button>
 </div>
     </div>
   );
