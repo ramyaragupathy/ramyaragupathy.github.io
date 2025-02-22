@@ -1,5 +1,5 @@
-import React from 'react';
-import { Github, Linkedin, Mail, Code, Globe, Folder, ChevronUp, ChevronDown} from 'lucide-react';
+import React, { useState } from 'react';
+import { Github, Linkedin, Mail, Code, Globe, Folder, ChevronUp, ChevronDown, Menu, X } from 'lucide-react';
 import ramya from './assets/ramya-circle.jpg';
 import hot from './assets/hotosm.jpg';
 import maplibre from './assets/maplibre.png';
@@ -12,17 +12,45 @@ import studio_classic from './assets/studio-classic.png';
 import fars from './assets/fars.jpg'
 
 function App() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-900 to-gray-800">
-      <nav className="fixed top-0 left-0 right-0 bg-gray-900/80 backdrop-blur-sm z-10">
-  <div className="container mx-auto px-4 py-4 flex justify-center gap-8">
-    <a href="#hero" className="text-gray-300 hover:text-white">Home</a>
-    <a href="#about" className="text-gray-300 hover:text-white">About</a>
-    <a href="#skills" className="text-gray-300 hover:text-white">Skills</a>
-    <a href="#projects" className="text-gray-300 hover:text-white">Projects</a>
-    <a href="#blog" className="text-gray-300 hover:text-white">Blog</a>
-    <a href="#connect" className="text-gray-300 hover:text-white">Connect</a>
+   {/* Navigation */}
+<nav className="fixed top-0 left-0 right-0 bg-gray-900/80 backdrop-blur-sm z-30">
+  <div className="container mx-auto px-4 py-4 flex items-center justify-between">
+    <h1 className="text-xl text-white font-bold">Ramya Ragupathy</h1>
+    
+    {/* Desktop Menu */}
+    <div className="hidden md:flex gap-8">
+      <a href="#hero" className="text-gray-300 hover:text-white">Home</a>
+      <a href="#about" className="text-gray-300 hover:text-white">About</a>
+      <a href="#skills" className="text-gray-300 hover:text-white">Skills</a>
+      <a href="#projects" className="text-gray-300 hover:text-white">Projects</a>
+      <a href="#blog" className="text-gray-300 hover:text-white">Blog</a>
+      <a href="#connect" className="text-gray-300 hover:text-white">Connect</a>
+    </div>
+
+    {/* Mobile Menu Button */}
+    <button 
+      className="md:hidden text-white focus:outline-none"
+      onClick={() => setIsMenuOpen(!isMenuOpen)}
+    >
+      {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+    </button>
   </div>
+
+  {/* Mobile Dropdown Menu */}
+  {isMenuOpen && (
+    <div className="md:hidden bg-gray-900/90 backdrop-blur-sm px-4 py-4 flex flex-col gap-4">
+      <a href="#hero" className="text-gray-300 hover:text-white" onClick={() => setIsMenuOpen(false)}>Home</a>
+      <a href="#about" className="text-gray-300 hover:text-white" onClick={() => setIsMenuOpen(false)}>About</a>
+      <a href="#skills" className="text-gray-300 hover:text-white" onClick={() => setIsMenuOpen(false)}>Skills</a>
+      <a href="#projects" className="text-gray-300 hover:text-white" onClick={() => setIsMenuOpen(false)}>Projects</a>
+      <a href="#blog" className="text-gray-300 hover:text-white" onClick={() => setIsMenuOpen(false)}>Blog</a>
+      <a href="#connect" className="text-gray-300 hover:text-white" onClick={() => setIsMenuOpen(false)}>Connect</a>
+    </div>
+  )}
 </nav>
       {/* Hero Section */}
       <div id="hero" className="container mx-auto px-4 py-20">
