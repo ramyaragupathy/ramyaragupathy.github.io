@@ -3,9 +3,13 @@ import { Github, Linkedin, Mail, Code, Globe, Folder} from 'lucide-react';
 import ramya from './assets/ramya-circle.jpg';
 import hot from './assets/hotosm.jpg';
 import maplibre from './assets/maplibre.png';
-import community from './assets/community.png';
-import npshot from './assets/nps_hot.png';
+import mentorship from './assets/mentorship.jpg';
+import overpass from './assets/overpass.png';
+import nps_hot from './assets/nps-hot.png';
 import nps from './assets/nps.png';
+import josm from './assets/josm.jpg';
+import studio_classic from './assets/studio-classic.png';
+import fars from './assets/fars.jpg'
 
 function App() {
   return (
@@ -89,14 +93,14 @@ function App() {
       </div>
 
       {/* Experience/Projects Section */}
-<div id="projects" className="container mx-auto px-4 py-16">
+      <div id="projects" className="container mx-auto px-4 py-16">
   <h2 className="text-3xl font-bold text-white mb-12 text-center">Projects</h2>
   <div className="space-y-8">
     {/* HOT Project */}
     <div className="bg-gray-800/30 p-8 rounded-xl backdrop-blur-sm flex flex-col lg:flex-row items-center gap-6">
       <img src={hot} alt="HOT" className="w-full lg:w-48 h-32 object-cover rounded-lg" />
-      <div>
-        <div className="flex flex-col md:flex-row justify-between mb-4">
+      <div className="flex-1">
+        <div className="flex justify-between mb-2">
           <h3 className="text-xl font-semibold text-white">Product Management for Tasking Manager</h3>
           <span className="text-blue-400">2018 - Present</span>
         </div>
@@ -110,8 +114,8 @@ function App() {
     {/* MapLibre Project */}
     <div className="bg-gray-800/30 p-8 rounded-xl backdrop-blur-sm flex flex-col lg:flex-row items-center gap-6">
       <img src={maplibre} alt="MapLibre" className="w-full lg:w-48 h-32 object-cover rounded-lg" />
-      <div>
-        <div className="flex flex-col md:flex-row justify-between mb-4">
+      <div className="flex-1">
+        <div className="flex justify-between mb-2">
           <h3 className="text-xl font-semibold text-white">Head of Product & Operations for web and native libraries</h3>
           <span className="text-blue-400">2024 - Present</span>
         </div>
@@ -124,9 +128,9 @@ function App() {
 
     {/* Community Project */}
     <div className="bg-gray-800/30 p-8 rounded-xl backdrop-blur-sm flex flex-col lg:flex-row items-center gap-6">
-      <img src={community} alt="Community" className="w-full lg:w-48 h-32 object-cover rounded-lg" />
-      <div>
-        <div className="flex flex-col md:flex-row justify-between mb-4">
+      <img src={mentorship} alt="Community" className="w-full lg:w-48 h-32 object-cover rounded-lg" />
+      <div className="flex-1">
+        <div className="flex justify-between mb-2">
           <h3 className="text-xl font-semibold text-white">Community Engagement & Mentorship for FOSS Tools</h3>
           <span className="text-blue-400">2015 - Present</span>
         </div>
@@ -139,42 +143,82 @@ function App() {
   </div>
 </div>
 
-    {/* Blog & LinkedIn Posts Section */}
+{/* Blog */}
 <div id="blog" className="container mx-auto px-4 py-16">
   <h2 className="text-3xl font-bold text-white mb-12 text-center">Blog</h2>
+
   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
- 
-    {/* Blog Post */}
+    {/* Blog Post 1 */}
     <a 
       href="https://www.hotosm.org/updates/the-results-are-in-enhancing-the-hot-tasking-manager-based-on-your-feedback/" 
       target="_blank" 
-      className="bg-purple-800/30 p-6 rounded-xl backdrop-blur-sm hover:bg-purple-800/50 transition-all"
+      className="bg-gray-800/30 p-6 rounded-xl backdrop-blur-sm hover:bg-gray-800/50 transition-all"
     >
-      <img 
-        src={npshot} 
-        alt="Blog Post" 
-        className="w-full h-40 object-cover rounded mb-4"
-      />
+      <img src={nps_hot} alt="Blog Post" className="w-full h-40 object-cover rounded mb-4" />
       <h3 className="text-lg font-semibold text-white mb-2">Announcing 2025 roadmap for Tasking Manager</h3>
-      <p className="text-gray-300">Results of the 2024 NPS survey and the plan ahead for tthe flagship tool.</p>
+      <p className="text-gray-300">Results of the 2024 NPS survey and the plan ahead for the flagship tool.</p>
     </a>
+
+    {/* Blog Post 2 */}
+    <a 
+      href="https://blog.mapbox.com/your-first-steps-with-josm-the-java-openstreetmap-editor-9e2fcafa7ba8" 
+      target="_blank" 
+      className="bg-gray-800/30 p-6 rounded-xl backdrop-blur-sm hover:bg-gray-800/50 transition-all"
+    >
+      <img src={josm} alt="Blog Post" className="w-full h-40 object-cover rounded mb-4" />
+      <h3 className="text-lg font-semibold text-white mb-2">First steps with JOSM</h3>
+      <p className="text-gray-300">Introduction to JOSM - desktop editor for OpenStreetMap.</p>
+    </a>
+
+    {/* Blog Post 3 */}
     <a 
       href="https://www.linkedin.com/feed/update/urn:li:activity:7275556325441363969/" 
       target="_blank" 
-      className="bg-purple-800/30 p-6 rounded-xl backdrop-blur-sm hover:bg-purple-800/50 transition-all"
+      className="bg-gray-800/30 p-6 rounded-xl backdrop-blur-sm hover:bg-gray-800/50 transition-all"
     >
-      <img 
-        src={nps} 
-        alt="Blog Post" 
-        className="w-full h-40 object-cover rounded mb-4"
-      />
+      <img src={nps} alt="Blog Post" className="w-full h-40 object-cover rounded mb-4" />
       <h3 className="text-lg font-semibold text-white mb-2">End of Year survey for Tasking Manager</h3>
       <p className="text-gray-300">Inviting end users to provide feedback on the performance of the tool.</p>
     </a>
 
+    {/* Blog Post 4 */}
+    <a 
+      href="https://medium.com/@r.ragupathy85/data-extraction-using-overpass-985b69139ef0" 
+      target="_blank" 
+      className="bg-gray-800/30 p-6 rounded-xl backdrop-blur-sm hover:bg-gray-800/50 transition-all"
+    >
+      <img src={overpass} alt="Blog Post" className="w-full h-40 object-cover rounded mb-4" />
+      <h3 className="text-lg font-semibold text-white mb-2">Data extraction using Overpass</h3>
+      <p className="text-gray-300">Steps to extract data from OpenStreetMap using Overpass Server.</p>
+    </a>
+
+    
+
+    {/* Blog Post 5 */}
+    <a 
+      href="https://blog.mapbox.com/open-data-and-traffic-fatalities-ff91a8339d41" 
+      target="_blank" 
+      className="bg-gray-800/30 p-6 rounded-xl backdrop-blur-sm hover:bg-gray-800/50 transition-all"
+    >
+      <img src={fars} alt="Blog Post" className="w-full h-40 object-cover rounded mb-4" />
+      <h3 className="text-lg font-semibold text-white mb-2">Visualising 15 years of US Traffic Fatalities</h3>
+      <p className="text-gray-300">Data visualisation of traffic fatalities in the US using the FARS dataset.</p>
+    </a>
+
+    {/* Blog Post 6 */}
+    <a 
+      href="https://blog.mapbox.com/map-of-middle-earth-with-mapbox-studio-classic-84d384bff145" 
+      target="_blank" 
+      className="bg-gray-800/30 p-6 rounded-xl backdrop-blur-sm hover:bg-gray-800/50 transition-all"
+    >
+      <img src={studio_classic} alt="Blog Post" className="w-full h-40 object-cover rounded mb-4" />
+      <h3 className="text-lg font-semibold text-white mb-2">A map of Middle Earth</h3>
+      <p className="text-gray-300">An exciting twist with Mapbox Studio Classic.</p>
+    </a>
   </div>
- 
 </div>
+ 
+
       {/* Connect Section */}
       <div id ="connect" className="container mx-auto px-4 py-16">
   <div className="bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-xl p-8 backdrop-blur-sm">
