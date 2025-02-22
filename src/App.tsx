@@ -88,9 +88,9 @@ function App() {
         </div>
       </div>
 
-      {/* Experience Section */}
+      {/* Experience/Projects Section */}
       <div className="container mx-auto px-4 py-16">
-        <h2 className="text-3xl font-bold text-white mb-12 text-center">Experience</h2>
+        <h2 className="text-3xl font-bold text-white mb-12 text-center">Projects</h2>
         <div className="space-y-8">
           <div className="bg-gray-800/30 p-8 rounded-xl backdrop-blur-sm">
             <div className="flex flex-col md:flex-row justify-between mb-4">
