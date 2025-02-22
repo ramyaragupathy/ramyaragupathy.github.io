@@ -109,7 +109,7 @@ function App() {
       <img src={maplibre} alt="MapLibre" className="w-full lg:w-48 h-32 object-cover rounded-lg" />
       <div>
         <div className="flex flex-col md:flex-row justify-between mb-4">
-          <h3 className="text-xl font-semibold text-white">Head of Product & Operations</h3>
+          <h3 className="text-xl font-semibold text-white">Head of Product & Operations for web and native libraries</h3>
           <span className="text-blue-400">2024 - Present</span>
         </div>
         <h4 className="text-lg text-gray-300 mb-2">MapLibre</h4>
@@ -124,7 +124,7 @@ function App() {
       <img src={community} alt="Community" className="w-full lg:w-48 h-32 object-cover rounded-lg" />
       <div>
         <div className="flex flex-col md:flex-row justify-between mb-4">
-          <h3 className="text-xl font-semibold text-white">Community & Mentorship</h3>
+          <h3 className="text-xl font-semibold text-white">Community Engagement & Mentorship for FOSS Tools</h3>
           <span className="text-blue-400">2015 - Present</span>
         </div>
         <h4 className="text-lg text-gray-300 mb-2">Open Source Community</h4>
