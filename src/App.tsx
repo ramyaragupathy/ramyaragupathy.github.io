@@ -1,12 +1,24 @@
 import React from 'react';
 import { Github, Linkedin, Mail, Code, Globe, Folder} from 'lucide-react';
 import ramya from './assets/ramya-circle.jpg';
+import hot from './assets/hotosm.jpg';
+import maplibre from './assets/maplibre.png';
+import community from './assets/community.png';
 
 function App() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-900 to-gray-800">
+      <nav className="fixed top-0 left-0 right-0 bg-gray-900/80 backdrop-blur-sm z-10">
+  <div className="container mx-auto px-4 py-4 flex justify-center gap-8">
+    <a href="#hero" className="text-gray-300 hover:text-white">Home</a>
+    <a href="#about" className="text-gray-300 hover:text-white">About</a>
+    <a href="#skills" className="text-gray-300 hover:text-white">Skills</a>
+    <a href="#projects" className="text-gray-300 hover:text-white">Projects</a>
+    <a href="#connect" className="text-gray-300 hover:text-white">Connect</a>
+  </div>
+</nav>
       {/* Hero Section */}
-      <div className="container mx-auto px-4 py-20">
+      <div id="hero" className="container mx-auto px-4 py-20">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
           <div className="lg:w-1/2 text-center lg:text-left">
             <h1 className="text-4xl lg:text-6xl font-bold text-white mb-6">Ramya Ragupathy
@@ -42,7 +54,7 @@ function App() {
       </div>
 
       {/* About Section */}
-      <div className="container mx-auto px-4 py-16">
+      <div id="about" className="container mx-auto px-4 py-16">
         <div className="bg-gray-800/50 rounded-xl p-8 backdrop-blur-sm">
           <h2 className="text-3xl font-bold text-white mb-4">About Me</h2>
           <p className="text-gray-300">
@@ -52,7 +64,7 @@ function App() {
       </div>
 
       {/* Skills Section */}
-      <div className="container mx-auto px-4 py-16">
+      <div id="skills" className="container mx-auto px-4 py-16">
         <h2 className="text-3xl font-bold text-white mb-12 text-center">Skills & Expertise</h2>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
           <div className="bg-gray-800/30 p-6 rounded-xl backdrop-blur-sm hover:bg-gray-800/50 transition-all">
@@ -70,64 +82,63 @@ function App() {
             <h3 className="text-xl font-semibold text-white mb-2">Software Product Management</h3>
             <p className="text-gray-400">Team Management, Roadmap Development, Product Vision & Strategy, User Research & feedback analysis</p>
           </div>
-          {/* <div className="bg-gray-800/30 p-6 rounded-xl backdrop-blur-sm hover:bg-gray-800/50 transition-all">
-            <Globe className="w-12 h-12 text-yellow-400 mb-4" />
-            <h3 className="text-xl font-semibold text-white mb-2">Web Technologies</h3>
-            <p className="text-gray-400">REST APIs, GraphQL, WebSockets</p>
-          </div>
-          <div className="bg-gray-800/30 p-6 rounded-xl backdrop-blur-sm hover:bg-gray-800/50 transition-all">
-            <Terminal className="w-12 h-12 text-red-400 mb-4" />
-            <h3 className="text-xl font-semibold text-white mb-2">DevOps</h3>
-            <p className="text-gray-400">Docker, AWS, CI/CD, Git</p>
-          </div>
-          <div className="bg-gray-800/30 p-6 rounded-xl backdrop-blur-sm hover:bg-gray-800/50 transition-all">
-            <Palette className="w-12 h-12 text-pink-400 mb-4" />
-            <h3 className="text-xl font-semibold text-white mb-2">UI/UX Design</h3>
-            <p className="text-gray-400">Figma, Adobe XD, Responsive Design</p>
-          </div> */}
         </div>
       </div>
 
       {/* Experience/Projects Section */}
-      <div className="container mx-auto px-4 py-16">
-        <h2 className="text-3xl font-bold text-white mb-12 text-center">Projects</h2>
-        <div className="space-y-8">
-          <div className="bg-gray-800/30 p-8 rounded-xl backdrop-blur-sm">
-            <div className="flex flex-col md:flex-row justify-between mb-4">
-              <h3 className="text-xl font-semibold text-white">Product Manager</h3>
-              <span className="text-blue-400">2018 - Present</span>
-            </div>
-            <h4 className="text-lg text-gray-300 mb-2">Humanitarian OpenStreetMap Team</h4>
-            <p className="text-gray-400">
-            Leading product vision and strategy for open-source web and mobile applications that empower volunteers, partners, and donors with critical geospatial data. My work enhances humanitarian efforts by improving tools like the Tasking Manager and Field Mapping Tasking Manager, integrating technologies such as Open Data Kit (ODK), and streamlining organized editing workflows.
-            </p>
-          </div>
-          <div className="bg-gray-800/30 p-8 rounded-xl backdrop-blur-sm">
-            <div className="flex flex-col md:flex-row justify-between mb-4">
-              <h3 className="text-xl font-semibold text-white">Head of Product & Operations </h3>
-              <span className="text-blue-400">2024 - Present</span>
-            </div>
-            <h4 className="text-lg text-gray-300 mb-2">MapLibre</h4>
-            <p className="text-gray-400">
-            Overseeing product positioning, community engagement, and operational excellence for the MapLibre open-source mapping library. My role includes coordinating roadmaps, managing sponsor relationships, and implementing strategic initiatives that strengthen MapLibre’s market presence.
-            </p>
-          </div>
-          <div className="bg-gray-800/30 p-8 rounded-xl backdrop-blur-sm">
-            <div className="flex flex-col md:flex-row justify-between mb-4">
-              <h3 className="text-xl font-semibold text-white">Community & Mentorship Initiatives</h3>
-              <span className="text-blue-400">2015 - Present</span>
-            </div>
-            <h4 className="text-lg text-gray-300 mb-2">Open Source Community</h4>
-            <p className="text-gray-400">
-            Regular speaker and mentor at events like State of the Map Asia. Passionate about fostering inclusive open-source communities, offering training sessions, and advocating for effective product storytelling in tech.
-            </p>
-          </div>
+<div id="projects" className="container mx-auto px-4 py-16">
+  <h2 className="text-3xl font-bold text-white mb-12 text-center">Projects</h2>
+  <div className="space-y-8">
+    {/* HOT Project */}
+    <div className="bg-gray-800/30 p-8 rounded-xl backdrop-blur-sm flex flex-col lg:flex-row items-center gap-6">
+      <img src={hot} alt="HOT" className="w-full lg:w-48 h-32 object-cover rounded-lg" />
+      <div>
+        <div className="flex flex-col md:flex-row justify-between mb-4">
+          <h3 className="text-xl font-semibold text-white">Product Management for Tasking Manager</h3>
+          <span className="text-blue-400">2018 - Present</span>
         </div>
+        <h4 className="text-lg text-gray-300 mb-2">Humanitarian OpenStreetMap Team</h4>
+        <p className="text-gray-400">
+          Leading product vision and strategy for open-source web and mobile applications that empower volunteers, partners, and donors with critical geospatial data.
+        </p>
       </div>
+    </div>
+
+    {/* MapLibre Project */}
+    <div className="bg-gray-800/30 p-8 rounded-xl backdrop-blur-sm flex flex-col lg:flex-row items-center gap-6">
+      <img src={maplibre} alt="MapLibre" className="w-full lg:w-48 h-32 object-cover rounded-lg" />
+      <div>
+        <div className="flex flex-col md:flex-row justify-between mb-4">
+          <h3 className="text-xl font-semibold text-white">Head of Product & Operations</h3>
+          <span className="text-blue-400">2024 - Present</span>
+        </div>
+        <h4 className="text-lg text-gray-300 mb-2">MapLibre</h4>
+        <p className="text-gray-400">
+          Overseeing product positioning, community engagement, and operational excellence for MapLibre’s open-source mapping library.
+        </p>
+      </div>
+    </div>
+
+    {/* Community Project */}
+    <div className="bg-gray-800/30 p-8 rounded-xl backdrop-blur-sm flex flex-col lg:flex-row items-center gap-6">
+      <img src={community} alt="Community" className="w-full lg:w-48 h-32 object-cover rounded-lg" />
+      <div>
+        <div className="flex flex-col md:flex-row justify-between mb-4">
+          <h3 className="text-xl font-semibold text-white">Community & Mentorship</h3>
+          <span className="text-blue-400">2015 - Present</span>
+        </div>
+        <h4 className="text-lg text-gray-300 mb-2">Open Source Community</h4>
+        <p className="text-gray-400">
+          Regular speaker and mentor at events like State of the Map Asia, fostering inclusive open-source communities.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
 
     
       {/* Connect Section */}
-      <div className="container mx-auto px-4 py-16">
+      <div id ="connect" className="container mx-auto px-4 py-16">
   <div className="bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-xl p-8 backdrop-blur-sm">
     <h2 className="text-3xl font-bold text-white mb-8 text-center">Let's Connect</h2>
     <div className="max-w-2xl mx-auto">
