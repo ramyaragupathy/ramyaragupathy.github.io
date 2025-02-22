@@ -1,5 +1,5 @@
 import React from 'react';
-import { Github, Linkedin, Mail, Twitter, Code, Globe, Folder} from 'lucide-react';
+import { Github, Linkedin, Mail, Code, Globe, Folder} from 'lucide-react';
 import ramya from './assets/ramya-circle.jpg';
 
 function App() {
@@ -15,16 +15,13 @@ function App() {
             Driving humanitarian impact through open-source mapping and product innovation.
             </p>
             <div className="flex gap-4 justify-center lg:justify-start">
-              <a href="#" className="p-2 bg-blue-500 rounded-full hover:bg-blue-600 transition-colors">
+              <a href="https://github.com/ramyaragupathy" target="_blank" className="p-2 bg-blue-500 rounded-full hover:bg-blue-600 transition-colors">
                 <Github className="w-6 h-6 text-white" />
               </a>
-              <a href="#" className="p-2 bg-blue-500 rounded-full hover:bg-blue-600 transition-colors">
+              <a href="https://www.linkedin.com/in/ramyaragupathy/" target="_blank" className="p-2 bg-blue-500 rounded-full hover:bg-blue-600 transition-colors">
                 <Linkedin className="w-6 h-6 text-white" />
               </a>
-              <a href="#" className="p-2 bg-blue-500 rounded-full hover:bg-blue-600 transition-colors">
-                <Twitter className="w-6 h-6 text-white" />
-              </a>
-              <a href="#" className="p-2 bg-blue-500 rounded-full hover:bg-blue-600 transition-colors">
+              <a href="mailto:r.ragupathy85@gmail.com" target="_blank" className="p-2 bg-blue-500 rounded-full hover:bg-blue-600 transition-colors">
                 <Mail className="w-6 h-6 text-white" />
               </a>
             </div>
