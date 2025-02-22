@@ -4,6 +4,8 @@ import ramya from './assets/ramya-circle.jpg';
 import hot from './assets/hotosm.jpg';
 import maplibre from './assets/maplibre.png';
 import community from './assets/community.png';
+import npshot from './assets/nps_hot.png';
+import nps from './assets/nps.png';
 
 function App() {
   return (
@@ -14,6 +16,7 @@ function App() {
     <a href="#about" className="text-gray-300 hover:text-white">About</a>
     <a href="#skills" className="text-gray-300 hover:text-white">Skills</a>
     <a href="#projects" className="text-gray-300 hover:text-white">Projects</a>
+    <a href="#blog" className="text-gray-300 hover:text-white">Blog</a>
     <a href="#connect" className="text-gray-300 hover:text-white">Connect</a>
   </div>
 </nav>
@@ -136,7 +139,42 @@ function App() {
   </div>
 </div>
 
-    
+    {/* Blog & LinkedIn Posts Section */}
+<div id="blog" className="container mx-auto px-4 py-16">
+  <h2 className="text-3xl font-bold text-white mb-12 text-center">Blog</h2>
+  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+ 
+    {/* Blog Post */}
+    <a 
+      href="https://www.hotosm.org/updates/the-results-are-in-enhancing-the-hot-tasking-manager-based-on-your-feedback/" 
+      target="_blank" 
+      className="bg-purple-800/30 p-6 rounded-xl backdrop-blur-sm hover:bg-purple-800/50 transition-all"
+    >
+      <img 
+        src={npshot} 
+        alt="Blog Post" 
+        className="w-full h-40 object-cover rounded mb-4"
+      />
+      <h3 className="text-lg font-semibold text-white mb-2">Announcing 2025 roadmap for Tasking Manager</h3>
+      <p className="text-gray-300">Results of the 2024 NPS survey and the plan ahead for tthe flagship tool.</p>
+    </a>
+    <a 
+      href="https://www.linkedin.com/feed/update/urn:li:activity:7275556325441363969/" 
+      target="_blank" 
+      className="bg-purple-800/30 p-6 rounded-xl backdrop-blur-sm hover:bg-purple-800/50 transition-all"
+    >
+      <img 
+        src={nps} 
+        alt="Blog Post" 
+        className="w-full h-40 object-cover rounded mb-4"
+      />
+      <h3 className="text-lg font-semibold text-white mb-2">End of Year survey for Tasking Manager</h3>
+      <p className="text-gray-300">Inviting end users to provide feedback on the performance of the tool.</p>
+    </a>
+
+  </div>
+ 
+</div>
       {/* Connect Section */}
       <div id ="connect" className="container mx-auto px-4 py-16">
   <div className="bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-xl p-8 backdrop-blur-sm">
